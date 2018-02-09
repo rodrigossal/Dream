@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F57D5D30202CB46700ED9703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D2F202CB46700ED9703 /* AppDelegate.swift */; };
-		F57D5D32202CB46700ED9703 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D31202CB46700ED9703 /* ViewController.swift */; };
+		F57D5D32202CB46700ED9703 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D31202CB46700ED9703 /* MainViewController.swift */; };
 		F57D5D35202CB46700ED9703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57D5D33202CB46700ED9703 /* Main.storyboard */; };
 		F57D5D38202CB46700ED9703 /* DreamHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D36202CB46700ED9703 /* DreamHelper.xcdatamodeld */; };
-		F57D5D3A202CB46700ED9703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57D5D39202CB46700ED9703 /* Assets.xcassets */; };
 		F57D5D3D202CB46700ED9703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57D5D3B202CB46700ED9703 /* LaunchScreen.storyboard */; };
+		F57D5D48202CD1B800ED9703 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D47202CD1B800ED9703 /* CollectionViewCell.swift */; };
+		F57D5D4A202CD3A400ED9703 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D49202CD3A400ED9703 /* ChooseViewController.swift */; };
+		F57D5D4C202CD95D00ED9703 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D4B202CD95D00ED9703 /* Options.swift */; };
+		F57D5D4E202CF53C00ED9703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57D5D4D202CF53C00ED9703 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F57D5D2C202CB46700ED9703 /* DreamHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57D5D2F202CB46700ED9703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F57D5D31202CB46700ED9703 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F57D5D31202CB46700ED9703 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F57D5D34202CB46700ED9703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F57D5D37202CB46700ED9703 /* DreamHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamHelper.xcdatamodel; sourceTree = "<group>"; };
-		F57D5D39202CB46700ED9703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F57D5D3C202CB46700ED9703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F57D5D3E202CB46700ED9703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57D5D47202CD1B800ED9703 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F57D5D49202CD3A400ED9703 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		F57D5D4B202CD95D00ED9703 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		F57D5D4D202CF53C00ED9703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +65,11 @@
 				F57D5D46202CB8E500ED9703 /* Model */,
 				F57D5D45202CB8D600ED9703 /* Controller */,
 				F57D5D44202CB8CF00ED9703 /* View */,
-				F57D5D39202CB46700ED9703 /* Assets.xcassets */,
 				F57D5D3B202CB46700ED9703 /* LaunchScreen.storyboard */,
 				F57D5D3E202CB46700ED9703 /* Info.plist */,
 				F57D5D2F202CB46700ED9703 /* AppDelegate.swift */,
 				F57D5D36202CB46700ED9703 /* DreamHelper.xcdatamodeld */,
+				F57D5D4D202CF53C00ED9703 /* Assets.xcassets */,
 			);
 			path = DreamHelper;
 			sourceTree = "<group>";
@@ -79,7 +85,8 @@
 		F57D5D45202CB8D600ED9703 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F57D5D31202CB46700ED9703 /* ViewController.swift */,
+				F57D5D31202CB46700ED9703 /* MainViewController.swift */,
+				F57D5D49202CD3A400ED9703 /* ChooseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -87,6 +94,8 @@
 		F57D5D46202CB8E500ED9703 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F57D5D47202CD1B800ED9703 /* CollectionViewCell.swift */,
+				F57D5D4B202CD95D00ED9703 /* Options.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,7 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F57D5D3D202CB46700ED9703 /* LaunchScreen.storyboard in Resources */,
-				F57D5D3A202CB46700ED9703 /* Assets.xcassets in Resources */,
+				F57D5D4E202CF53C00ED9703 /* Assets.xcassets in Resources */,
 				F57D5D35202CB46700ED9703 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F57D5D32202CB46700ED9703 /* ViewController.swift in Sources */,
+				F57D5D32202CB46700ED9703 /* MainViewController.swift in Sources */,
 				F57D5D30202CB46700ED9703 /* AppDelegate.swift in Sources */,
+				F57D5D48202CD1B800ED9703 /* CollectionViewCell.swift in Sources */,
+				F57D5D4A202CD3A400ED9703 /* ChooseViewController.swift in Sources */,
+				F57D5D4C202CD95D00ED9703 /* Options.swift in Sources */,
 				F57D5D38202CB46700ED9703 /* DreamHelper.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7658FGUAHR;
 				INFOPLIST_FILE = DreamHelper/Info.plist;
@@ -318,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7658FGUAHR;
 				INFOPLIST_FILE = DreamHelper/Info.plist;
