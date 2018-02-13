@@ -1,0 +1,6 @@
+framework module Pods_DreamHelper {
+  umbrella header "Pods-DreamHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290D04DC983D3BF766C294AD /* Pods_DreamHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E5F3224CB6CBA37BB5D5D2 /* Pods_DreamHelper.framework */; };
+		F54F5EA7202E209200E87DC3 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EA6202E209200E87DC3 /* Option.swift */; };
+		F54F5EA9202E28D900E87DC3 /* ConcertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EA8202E28D900E87DC3 /* ConcertsViewController.swift */; };
+		F54F5EAB202E2B5F00E87DC3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EAA202E2B5F00E87DC3 /* TableViewCell.swift */; };
 		F57D5D30202CB46700ED9703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D2F202CB46700ED9703 /* AppDelegate.swift */; };
 		F57D5D32202CB46700ED9703 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D31202CB46700ED9703 /* MainViewController.swift */; };
 		F57D5D35202CB46700ED9703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57D5D33202CB46700ED9703 /* Main.storyboard */; };
@@ -19,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DB75BE78FCF21C7BF753D68 /* Pods-DreamHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamHelper/Pods-DreamHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E5F3224CB6CBA37BB5D5D2 /* Pods_DreamHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCEB945E8843A26BFCC7201 /* Pods-DreamHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamHelper/Pods-DreamHelper.release.xcconfig"; sourceTree = "<group>"; };
+		F54F5EA6202E209200E87DC3 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		F54F5EA8202E28D900E87DC3 /* ConcertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertsViewController.swift; sourceTree = "<group>"; };
+		F54F5EAA202E2B5F00E87DC3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F57D5D2C202CB46700ED9703 /* DreamHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57D5D2F202CB46700ED9703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F57D5D31202CB46700ED9703 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -37,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D04DC983D3BF766C294AD /* Pods_DreamHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42E342950437AEDBC650E1A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3E5F3224CB6CBA37BB5D5D2 /* Pods_DreamHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1223F2D2E2367F667313DFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DB75BE78FCF21C7BF753D68 /* Pods-DreamHelper.debug.xcconfig */,
+				BFCEB945E8843A26BFCC7201 /* Pods-DreamHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F57D5D23202CB46600ED9703 = {
 			isa = PBXGroup;
 			children = (
 				F57D5D2E202CB46700ED9703 /* DreamHelper */,
 				F57D5D2D202CB46700ED9703 /* Products */,
+				E1223F2D2E2367F667313DFF /* Pods */,
+				42E342950437AEDBC650E1A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +117,7 @@
 			children = (
 				F57D5D31202CB46700ED9703 /* MainViewController.swift */,
 				F57D5D49202CD3A400ED9703 /* ChooseViewController.swift */,
+				F54F5EA8202E28D900E87DC3 /* ConcertsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -96,6 +127,8 @@
 			children = (
 				F57D5D47202CD1B800ED9703 /* CollectionViewCell.swift */,
 				F57D5D4B202CD95D00ED9703 /* Options.swift */,
+				F54F5EA6202E209200E87DC3 /* Option.swift */,
+				F54F5EAA202E2B5F00E87DC3 /* TableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F57D5D41202CB46700ED9703 /* Build configuration list for PBXNativeTarget "DreamHelper" */;
 			buildPhases = (
+				157E502B8D57E08FE2462B7E /* [CP] Check Pods Manifest.lock */,
 				F57D5D28202CB46600ED9703 /* Sources */,
 				F57D5D29202CB46600ED9703 /* Frameworks */,
 				F57D5D2A202CB46600ED9703 /* Resources */,
+				4A68F900643C9CB14900E30C /* [CP] Embed Pods Frameworks */,
+				70023D90DAC7B7F597E003FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,6 +203,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		157E502B8D57E08FE2462B7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DreamHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A68F900643C9CB14900E30C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DreamHelper/Pods-DreamHelper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamHelper/Pods-DreamHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70023D90DAC7B7F597E003FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamHelper/Pods-DreamHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F57D5D28202CB46600ED9703 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -174,10 +264,13 @@
 			files = (
 				F57D5D32202CB46700ED9703 /* MainViewController.swift in Sources */,
 				F57D5D30202CB46700ED9703 /* AppDelegate.swift in Sources */,
+				F54F5EA7202E209200E87DC3 /* Option.swift in Sources */,
+				F54F5EAB202E2B5F00E87DC3 /* TableViewCell.swift in Sources */,
 				F57D5D48202CD1B800ED9703 /* CollectionViewCell.swift in Sources */,
 				F57D5D4A202CD3A400ED9703 /* ChooseViewController.swift in Sources */,
 				F57D5D4C202CD95D00ED9703 /* Options.swift in Sources */,
 				F57D5D38202CB46700ED9703 /* DreamHelper.xcdatamodeld in Sources */,
+				F54F5EA9202E28D900E87DC3 /* ConcertsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +405,7 @@
 		};
 		F57D5D42202CB46700ED9703 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB75BE78FCF21C7BF753D68 /* Pods-DreamHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -329,6 +423,7 @@
 		};
 		F57D5D43202CB46700ED9703 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFCEB945E8843A26BFCC7201 /* Pods-DreamHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
