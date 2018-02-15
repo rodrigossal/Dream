@@ -15,15 +15,15 @@ class RehearsalViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var textField: UITextField!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ConcertStore.main.nome.count
+        return RehearsalStore.main.nome.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ConcertTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RehearsalTableViewCell
         
         let item = indexPath.item
         
-        cell.label.text = ConcertStore.main.nome[item]
+        cell.label.text = RehearsalStore.main.nome[item]
         
         return cell
     }
@@ -31,7 +31,7 @@ class RehearsalViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == UITableViewCellEditingStyle.delete{
-            ConcertStore.main.nome.remove(at: indexPath.row)
+            RehearsalStore.main.nome.remove(at: indexPath.row)
             myTableView.reloadData()
         }
     }
@@ -39,7 +39,8 @@ class RehearsalViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func addItem(_ sender: Any) {
         
-        ConcertStore.main.nome.append(textField.text!)
+        RehearsalStore.main.nome.append(textField.text!)
+        textField.text = ""
         myTableView.reloadData()
         
     }
@@ -53,7 +54,9 @@ class RehearsalViewController: UIViewController, UITableViewDelegate, UITableVie
         super.didReceiveMemoryWarning()
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
     
     
 }

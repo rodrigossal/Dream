@@ -18,7 +18,6 @@ class OptionStore {
         nome.append("PLAN CONCERTS")
         nome.append("REHEARSAL SONGS")
         nome.append("PLAN INCOME/OUTCOMES")
-        nome.append("SELL MERCH")
     }
     
     

@@ -10,11 +10,37 @@
 import Foundation
 import UIKit
 
+
+//protocol WitchSegue {
+//    func chooseSegue() -> String
+//}
+//
+//class Concerts : WitchSegue{
+//
+//    func chooseSegue() -> String{
+//        return "concerts"
+//    }
+//}
+//class rehearsal : WitchSegue{
+//
+//    func chooseSegue() -> String{
+//        return "rehearsal"
+//    }
+//}
+//class incomes : WitchSegue{
+//
+//    func chooseSegue() -> String{
+//        return "incomes"
+//    }
+//}
+
+
 class ChooseViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
-    
-    
+
     let reuseIdentifier = "cell"
+    
+    let option = Option()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +65,8 @@ class ChooseViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "concerts", sender: self)
         
+        
+        performSegue(withIdentifier: option.witchOption(indexPath.item) , sender: self)
     }
 }

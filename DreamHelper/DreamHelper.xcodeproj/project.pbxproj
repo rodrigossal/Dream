@@ -14,6 +14,10 @@
 		F54F5EB120351B0300E87DC3 /* ConcertStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EB020351B0300E87DC3 /* ConcertStore.swift */; };
 		F54F5EB32035B3B600E87DC3 /* RehearsalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EB22035B3B600E87DC3 /* RehearsalViewController.swift */; };
 		F54F5EB52035B43600E87DC3 /* RehearsalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EB42035B43600E87DC3 /* RehearsalTableViewCell.swift */; };
+		F54F5EB72035C0B100E87DC3 /* RehearsalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EB62035C0B100E87DC3 /* RehearsalStore.swift */; };
+		F54F5EB92035C8B200E87DC3 /* IncomesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EB82035C8B200E87DC3 /* IncomesTableViewCell.swift */; };
+		F54F5EBB2035C8E400E87DC3 /* IncomesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EBA2035C8E400E87DC3 /* IncomesStore.swift */; };
+		F54F5EBD2035CA3300E87DC3 /* IncomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EBC2035CA3300E87DC3 /* IncomesViewController.swift */; };
 		F57D5D30202CB46700ED9703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D2F202CB46700ED9703 /* AppDelegate.swift */; };
 		F57D5D32202CB46700ED9703 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D31202CB46700ED9703 /* MainViewController.swift */; };
 		F57D5D35202CB46700ED9703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57D5D33202CB46700ED9703 /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 		F54F5EB020351B0300E87DC3 /* ConcertStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertStore.swift; sourceTree = "<group>"; };
 		F54F5EB22035B3B600E87DC3 /* RehearsalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RehearsalViewController.swift; sourceTree = "<group>"; };
 		F54F5EB42035B43600E87DC3 /* RehearsalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RehearsalTableViewCell.swift; sourceTree = "<group>"; };
+		F54F5EB62035C0B100E87DC3 /* RehearsalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RehearsalStore.swift; sourceTree = "<group>"; };
+		F54F5EB82035C8B200E87DC3 /* IncomesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesTableViewCell.swift; sourceTree = "<group>"; };
+		F54F5EBA2035C8E400E87DC3 /* IncomesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesStore.swift; sourceTree = "<group>"; };
+		F54F5EBC2035CA3300E87DC3 /* IncomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesViewController.swift; sourceTree = "<group>"; };
 		F57D5D2C202CB46700ED9703 /* DreamHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57D5D2F202CB46700ED9703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F57D5D31202CB46700ED9703 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 				F57D5D49202CD3A400ED9703 /* ChooseViewController.swift */,
 				F54F5EAE203519BA00E87DC3 /* ConcertViewController.swift */,
 				F54F5EB22035B3B600E87DC3 /* RehearsalViewController.swift */,
+				F54F5EBC2035CA3300E87DC3 /* IncomesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 				F54F5EA6202E209200E87DC3 /* Option.swift */,
 				F54F5EAA202E2B5F00E87DC3 /* ConcertTableViewCell.swift */,
 				F54F5EB42035B43600E87DC3 /* RehearsalTableViewCell.swift */,
+				F54F5EB82035C8B200E87DC3 /* IncomesTableViewCell.swift */,
 				F54F5EB020351B0300E87DC3 /* ConcertStore.swift */,
+				F54F5EB62035C0B100E87DC3 /* RehearsalStore.swift */,
+				F54F5EBA2035C8E400E87DC3 /* IncomesStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,10 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F54F5EB120351B0300E87DC3 /* ConcertStore.swift in Sources */,
+				F54F5EBB2035C8E400E87DC3 /* IncomesStore.swift in Sources */,
 				F54F5EB52035B43600E87DC3 /* RehearsalTableViewCell.swift in Sources */,
+				F54F5EBD2035CA3300E87DC3 /* IncomesViewController.swift in Sources */,
 				F57D5D32202CB46700ED9703 /* MainViewController.swift in Sources */,
 				F57D5D30202CB46700ED9703 /* AppDelegate.swift in Sources */,
 				F54F5EA7202E209200E87DC3 /* Option.swift in Sources */,
+				F54F5EB72035C0B100E87DC3 /* RehearsalStore.swift in Sources */,
+				F54F5EB92035C8B200E87DC3 /* IncomesTableViewCell.swift in Sources */,
 				F54F5EAB202E2B5F00E87DC3 /* ConcertTableViewCell.swift in Sources */,
 				F57D5D48202CD1B800ED9703 /* CollectionViewCell.swift in Sources */,
 				F57D5D4A202CD3A400ED9703 /* ChooseViewController.swift in Sources */,

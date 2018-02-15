@@ -15,10 +15,7 @@ class ConcertStore {
     var nome = [String]()
     
     init() {
-        nome.append("PLAN CONCERTS")
-        nome.append("REHEARSAL SONGS")
-        nome.append("PLAN INCOME/OUTCOMES")
-        nome.append("SELL MERCH")
+
     }
     
     

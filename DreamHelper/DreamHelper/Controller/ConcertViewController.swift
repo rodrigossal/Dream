@@ -40,6 +40,7 @@ class ConcertViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBAction func addItem(_ sender: Any) {
         
         ConcertStore.main.nome.append(textField.text!)
+        textField.text = ""
         myTableView.reloadData()
         
     }
@@ -53,7 +54,9 @@ class ConcertViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.didReceiveMemoryWarning()
     }
     
-
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
 
 
 }

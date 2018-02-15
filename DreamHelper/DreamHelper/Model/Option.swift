@@ -11,6 +11,15 @@ import UIKit
 class Option {
     
     
+var choice = [String]()
     
+    init() {
+        choice.append("concerts")
+        choice.append("rehearsal")
+        choice.append("incomes")
+    }
     
+    func witchOption(_ n :Int) -> String{
+        return choice[n]
+    }
 }
