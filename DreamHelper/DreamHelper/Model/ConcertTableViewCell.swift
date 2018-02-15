@@ -8,10 +8,11 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class ConcertTableViewCell: UITableViewCell {
     
     
-
+    @IBOutlet weak var label: UILabel!
+    
     
 }
 

@@ -18,15 +18,13 @@ class ChooseViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print("oiiiii")
-        return Options.main.nome.count
+        return OptionStore.main.nome.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -35,7 +33,7 @@ class ChooseViewController: UIViewController, UICollectionViewDataSource, UIColl
         print("oiiiii")
         let item = indexPath.item
         
-        cell.label.text = Options.main.nome[item]
+        cell.label.text = OptionStore.main.nome[item]
         
         return cell
     }

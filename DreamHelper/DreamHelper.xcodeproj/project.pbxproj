@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		290D04DC983D3BF766C294AD /* Pods_DreamHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E5F3224CB6CBA37BB5D5D2 /* Pods_DreamHelper.framework */; };
 		F54F5EA7202E209200E87DC3 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EA6202E209200E87DC3 /* Option.swift */; };
-		F54F5EA9202E28D900E87DC3 /* ConcertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EA8202E28D900E87DC3 /* ConcertsViewController.swift */; };
-		F54F5EAB202E2B5F00E87DC3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EAA202E2B5F00E87DC3 /* TableViewCell.swift */; };
+		F54F5EAB202E2B5F00E87DC3 /* ConcertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EAA202E2B5F00E87DC3 /* ConcertTableViewCell.swift */; };
+		F54F5EAF203519BA00E87DC3 /* ConcertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EAE203519BA00E87DC3 /* ConcertViewController.swift */; };
+		F54F5EB120351B0300E87DC3 /* ConcertStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EB020351B0300E87DC3 /* ConcertStore.swift */; };
+		F54F5EB32035B3B600E87DC3 /* RehearsalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EB22035B3B600E87DC3 /* RehearsalViewController.swift */; };
+		F54F5EB52035B43600E87DC3 /* RehearsalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F5EB42035B43600E87DC3 /* RehearsalTableViewCell.swift */; };
 		F57D5D30202CB46700ED9703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D2F202CB46700ED9703 /* AppDelegate.swift */; };
 		F57D5D32202CB46700ED9703 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D31202CB46700ED9703 /* MainViewController.swift */; };
 		F57D5D35202CB46700ED9703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57D5D33202CB46700ED9703 /* Main.storyboard */; };
@@ -18,7 +21,7 @@
 		F57D5D3D202CB46700ED9703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57D5D3B202CB46700ED9703 /* LaunchScreen.storyboard */; };
 		F57D5D48202CD1B800ED9703 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D47202CD1B800ED9703 /* CollectionViewCell.swift */; };
 		F57D5D4A202CD3A400ED9703 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D49202CD3A400ED9703 /* ChooseViewController.swift */; };
-		F57D5D4C202CD95D00ED9703 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D4B202CD95D00ED9703 /* Options.swift */; };
+		F57D5D4C202CD95D00ED9703 /* OptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D5D4B202CD95D00ED9703 /* OptionStore.swift */; };
 		F57D5D4E202CF53C00ED9703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57D5D4D202CF53C00ED9703 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +30,11 @@
 		A3E5F3224CB6CBA37BB5D5D2 /* Pods_DreamHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCEB945E8843A26BFCC7201 /* Pods-DreamHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamHelper/Pods-DreamHelper.release.xcconfig"; sourceTree = "<group>"; };
 		F54F5EA6202E209200E87DC3 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
-		F54F5EA8202E28D900E87DC3 /* ConcertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertsViewController.swift; sourceTree = "<group>"; };
-		F54F5EAA202E2B5F00E87DC3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F54F5EAA202E2B5F00E87DC3 /* ConcertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertTableViewCell.swift; sourceTree = "<group>"; };
+		F54F5EAE203519BA00E87DC3 /* ConcertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertViewController.swift; sourceTree = "<group>"; };
+		F54F5EB020351B0300E87DC3 /* ConcertStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertStore.swift; sourceTree = "<group>"; };
+		F54F5EB22035B3B600E87DC3 /* RehearsalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RehearsalViewController.swift; sourceTree = "<group>"; };
+		F54F5EB42035B43600E87DC3 /* RehearsalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RehearsalTableViewCell.swift; sourceTree = "<group>"; };
 		F57D5D2C202CB46700ED9703 /* DreamHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57D5D2F202CB46700ED9703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F57D5D31202CB46700ED9703 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +44,7 @@
 		F57D5D3E202CB46700ED9703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57D5D47202CD1B800ED9703 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F57D5D49202CD3A400ED9703 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
-		F57D5D4B202CD95D00ED9703 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		F57D5D4B202CD95D00ED9703 /* OptionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionStore.swift; sourceTree = "<group>"; };
 		F57D5D4D202CF53C00ED9703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +123,8 @@
 			children = (
 				F57D5D31202CB46700ED9703 /* MainViewController.swift */,
 				F57D5D49202CD3A400ED9703 /* ChooseViewController.swift */,
-				F54F5EA8202E28D900E87DC3 /* ConcertsViewController.swift */,
+				F54F5EAE203519BA00E87DC3 /* ConcertViewController.swift */,
+				F54F5EB22035B3B600E87DC3 /* RehearsalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,9 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				F57D5D47202CD1B800ED9703 /* CollectionViewCell.swift */,
-				F57D5D4B202CD95D00ED9703 /* Options.swift */,
+				F57D5D4B202CD95D00ED9703 /* OptionStore.swift */,
 				F54F5EA6202E209200E87DC3 /* Option.swift */,
-				F54F5EAA202E2B5F00E87DC3 /* TableViewCell.swift */,
+				F54F5EAA202E2B5F00E87DC3 /* ConcertTableViewCell.swift */,
+				F54F5EB42035B43600E87DC3 /* RehearsalTableViewCell.swift */,
+				F54F5EB020351B0300E87DC3 /* ConcertStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,15 +271,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54F5EB120351B0300E87DC3 /* ConcertStore.swift in Sources */,
+				F54F5EB52035B43600E87DC3 /* RehearsalTableViewCell.swift in Sources */,
 				F57D5D32202CB46700ED9703 /* MainViewController.swift in Sources */,
 				F57D5D30202CB46700ED9703 /* AppDelegate.swift in Sources */,
 				F54F5EA7202E209200E87DC3 /* Option.swift in Sources */,
-				F54F5EAB202E2B5F00E87DC3 /* TableViewCell.swift in Sources */,
+				F54F5EAB202E2B5F00E87DC3 /* ConcertTableViewCell.swift in Sources */,
 				F57D5D48202CD1B800ED9703 /* CollectionViewCell.swift in Sources */,
 				F57D5D4A202CD3A400ED9703 /* ChooseViewController.swift in Sources */,
-				F57D5D4C202CD95D00ED9703 /* Options.swift in Sources */,
+				F57D5D4C202CD95D00ED9703 /* OptionStore.swift in Sources */,
 				F57D5D38202CB46700ED9703 /* DreamHelper.xcdatamodeld in Sources */,
-				F54F5EA9202E28D900E87DC3 /* ConcertsViewController.swift in Sources */,
+				F54F5EAF203519BA00E87DC3 /* ConcertViewController.swift in Sources */,
+				F54F5EB32035B3B600E87DC3 /* RehearsalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
